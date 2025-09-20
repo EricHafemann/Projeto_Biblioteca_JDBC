@@ -9,6 +9,14 @@ public class Usuario {
     private String senha;
     private String tipoUsuario;
 
+    // Construtor
+    public Usuario(String nome, String username, String senha, String tipoUsuario) {
+        setNome(nome);
+        setUsername(username);
+        setSenha(senha);
+        setTipoUsuario(tipoUsuario);
+    }
+
     // Métodos Getters e Setters
     public int getId() {
         return id;

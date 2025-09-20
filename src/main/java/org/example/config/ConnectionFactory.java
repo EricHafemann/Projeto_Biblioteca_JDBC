@@ -15,7 +15,7 @@ public class ConnectionFactory {
                 Properties properties = new Properties();
                 InputStream is = ConnectionFactory.class
                         .getClassLoader()
-                        .getResourceAsStream("applcation.properties");
+                        .getResourceAsStream("application.properties");
                 properties.load(is);
 
                 String url = properties.getProperty("db.url");

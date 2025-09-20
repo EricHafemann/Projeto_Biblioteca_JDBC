@@ -22,22 +22,23 @@ O sistema permite o **cadastro de usuários, livros e empréstimos**, além do c
 
 ---
 
-## 🗂 Estrutura de Pacotes
+## 📂 Estrutura de Pacotes
 
+```plaintext
 src/main/java/org/example/biblioteca/
 │
 ├── config/
-│ └── ConnectionFactory.java # Classe para conectar no banco via JDBC
+│   └── ConnectionFactory.java   # Classe para conectar no banco via JDBC
 │
 ├── model/
-│ ├── Usuario.java # Classe representando um usuário
-│ ├── Livro.java # Classe representando um livro
-│ └── Emprestimo.java # Classe representando um empréstimo
+│   ├── Usuario.java             # Classe representando um usuário
+│   ├── Livro.java               # Classe representando um livro
+│   └── Emprestimo.java          # Classe representando um empréstimo
 │
 ├── dao/
-│ ├── UsuarioDao.java # CRUD de usuários
-│ ├── LivroDao.java # CRUD de livros
-│ └── EmprestimoDao.java # CRUD de empréstimos
+│   ├── UsuarioDao.java          # CRUD de usuários
+│   ├── LivroDao.java            # CRUD de livros
+│   └── EmprestimoDao.java       # CRUD de empréstimos
 │
 └── main/
-└── BibliotecaApp.java # Classe principal para executar o sistema
+    └── BibliotecaApp.java       # Classe principal para executar o sistema
